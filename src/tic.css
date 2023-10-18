@@ -1,0 +1,74 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("/home/yashaswini/tic_tac_toe/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.avif"); /* Specify the path to your image */
+  background-size: cover; /* Adjust how the image is displayed */
+  background-color: #383636;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 20px;
+}
+
+.board-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #031a44;
+  border: 1px solid #131211;
+  color: #dbb81b;
+  cursor: pointer;
+  margin:1px 1px;
+}
+
+.status {
+  margin: 10px 0;
+  font-size: 24px;
+  text-align: center;
+}
+.restart-button button {
+  padding: 10px 20px;
+  margin: 10px 100px;
+  text-align: center;
+  font-size: 18px;
+  align-items: center;
+  background-color: #f7b138;
+  color: #fff;
+  z-index: 1;
+  border: none;
+  cursor: pointer;
+}
+.game-over-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("/home/yashaswini/tic_tac_toe/gameover.jpg"); /* Specify the path to your background image */
+  background-size: cover; /* Adjust how the image is displayed */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  background-position: center center; /* Center the background image */
+  border: 2px solid #000;
+  padding: 50px;
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  max-width: 80%;
+}
+.game-over-message img {
+  max-width: 100%;
+}
